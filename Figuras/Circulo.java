@@ -17,4 +17,16 @@ public class Circulo extends Figura
     {
         area = pi*(float)Math.pow(radio, 2);
     }
+    @Override
+    public boolean equals(Object obj)
+    {
+        if(obj instanceof Circulo) 
+        {
+            return this.radio == ((Circulo)obj).radio;
+        }
+        else 
+        {
+            return false;
+        }
+    }
 }

@@ -20,4 +20,11 @@ public class Figura
    {
        System.out.println("Ups!");
    }
+   @Override
+   public boolean equals(Object obj)
+   {
+       return this.area == ((Figura)obj).area;
+   }
+   //@Override
+   
 }
