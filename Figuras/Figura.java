@@ -8,8 +8,12 @@
 public class Figura
 {
    protected float area;
-   public Figura()
+   private int posx; 
+   private int posy;
+   public Figura(int x, int y)
    {
+       posx = x; 
+       posy = y;
        area = 0;
    }
    public float accedeArea()

@@ -29,7 +29,9 @@ public class Principal
        {
             System.out.println(" El area del triangulo es = " + a.accedeArea());
        }*/
-       Triangulo t1 = new Triangulo(4,5);
+       Ventana wind = new Ventana ( 800, 600);
+       wind.setVisible(true);
+       /*Triangulo t1 = new Triangulo(4,5);
        Circulo c1 = new Circulo(3);
        Circulo c2 = new Circulo(3);
        if(c1.equals(t1))
@@ -38,6 +40,6 @@ public class Principal
        }
        else {
            System.out.println(" iguales");
-       }
+       }*/
    }
 }
