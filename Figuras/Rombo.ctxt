@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=x\ y\ l
+comment0.target=Rombo(int,\ int,\ int)
+comment0.text=Constructor\ for\ objects\ of\ class\ Rombo
+comment1.params=g
+comment1.target=void\ dibuja(java.awt.Graphics)
+numComments=2

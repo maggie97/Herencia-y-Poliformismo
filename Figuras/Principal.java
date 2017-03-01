@@ -10,36 +10,9 @@ public class Principal
 {
    public static void main(String[] args)
    {
-       //Figura [] fig = new Figura[3];
-      /* ArrayList <Figura> fig = new ArrayList <Figura>();
-       Triangulo t1 = new Triangulo(3, 4 );
-       Cuadrado s1 = new Cuadrado(3);
-       Circulo c1 = new Circulo(3);
-       fig.add(t1);
-       fig.add(s1);
-       fig.add(c1);
-       Iterator <Figura> aux1 = fig.iterator();
-       Iterator <Figura> aux2 = fig.iterator();
-       while(aux1.hasNext())
-       {
-           //Figura a = new aux1.next();   
-           // a.calculaArea();
-       }
-       for(Figura a: fig)
-       {
-            System.out.println(" El area del triangulo es = " + a.accedeArea());
-       }*/
+      
        Ventana wind = new Ventana ( 800, 600);
        wind.setVisible(true);
-       /*Triangulo t1 = new Triangulo(4,5);
-       Circulo c1 = new Circulo(3);
-       Circulo c2 = new Circulo(3);
-       if(c1.equals(t1))
-       {
-           System.out.println(" iguales");
-       }
-       else {
-           System.out.println(" iguales");
-       }*/
+      
    }
 }
