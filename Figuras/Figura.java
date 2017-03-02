@@ -1,5 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Color;
 /**
  * Write a description of class Figuras here.
  * 
@@ -11,6 +12,11 @@ public abstract class Figura
    protected float area;
    private int posx; 
    private int posy;
+   Color azul = new Color(34, 193, 185);
+   Color verde = new Color (124,252,0);
+   Color rojo = new Color (	128,0,0);
+   Color b = new Color(7, 48, 120);
+   
    public Figura(int x, int y)
    {
        posx = x; 
@@ -30,9 +36,10 @@ public abstract class Figura
    {
        return this.area == ((Figura)obj).area;
    }
-   public abstract void dibuja(Graphics g);
+   //@Override
+   abstract public void dibuja(Graphics2D g);
    public int DevolverX()
-    { return posx; } 
-    public int DevolverY()
-    { return posy; } 
+   { return posx; } 
+   public int DevolverY()
+   { return posy; } 
 }

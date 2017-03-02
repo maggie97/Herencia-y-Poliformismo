@@ -20,10 +20,13 @@ public class Triangulo extends Figura
     {
         area = (base * altura) / 2;
     }
-    public void dibuja(Graphics g)
+    @Override
+    public void dibuja(Graphics2D g2)
     {
-        Graphics2D g2 = (Graphics2D) g;
-        int []a = {50, 50, 80}; int []b = {50, 100, 100};
+        int x_ = super.DevolverX();
+        int y_ = super.DevolverY();
+        int []a = {x_, x_ +(int)base/2, x_-(int)base/2}; int b[] = {y_, y_+(int)altura, y_+(int)altura};
+            //50, 50, 80}; int []b = {50, 100, 100};
         g2.drawPolygon(a, b, 3);
     }
 }

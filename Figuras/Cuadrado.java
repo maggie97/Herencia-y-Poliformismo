@@ -6,7 +6,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Cuadrado extends Figura
+public class Cuadrado extends Poligono
 {
     private float lado;
     public Cuadrado(int x, int y, float l)
@@ -18,9 +18,9 @@ public class Cuadrado extends Figura
     {
         area = (float)Math.pow(lado, 2);
     }
-    public void dibuja(Graphics g)
+    @Override
+    public void dibuja(Graphics2D g2)
     {
-        Graphics2D g2 = (Graphics2D) g;
-        g2.drawRect(20, 100, (int)lado, (int)lado);
+        g2.drawRect(super.DevolverX(), super.DevolverY(), (int)lado, (int)lado);
     }
 }

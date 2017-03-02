@@ -6,7 +6,7 @@ import java.awt.Graphics2D;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Rombo extends Figura
+public class Rombo extends Poligono
 {
     int lado;
     /** Constructor for objects of class Rombo*/
@@ -16,10 +16,13 @@ public class Rombo extends Figura
         lado = l;
     }
     @Override
-    public void dibuja(Graphics g)
-    {
-        Graphics2D g2 = (Graphics2D) g;
-        int []a = {50, 100, 150, 100}; int []b = {100, 50, 100, 150};
+    public void dibuja(Graphics2D g2)
+    { 
+        int x_ = super.DevolverX();
+        int y_ = super.DevolverY();
+        int ladoY = (int)lado*10/12;
+        int ladoX = (int)lado*5/12;
+        int []a = {x_, x_+ladoX , x_, x_-ladoX}; int []b = {y_, y_+ladoY , y_+ladoY*2, y_+ladoY};
         g2.drawPolygon(a, b, 4);
     }
     

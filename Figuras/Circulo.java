@@ -31,11 +31,10 @@ public class Circulo extends Figura
             return false;
         }
     }
-    //@Override
-    public void dibuja(Graphics g)
+    @Override
+    public void dibuja(Graphics2D g2)
     {
-        Graphics2D g2 = (Graphics2D) g;
-        g2.drawOval(200, 150, (int)radio*2, (int)radio*2);
+        g2.drawOval(super.DevolverX(), super.DevolverY(), (int)radio*2, (int)radio*2);
     }
         
 }
