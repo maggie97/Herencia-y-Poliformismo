@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Planeta()
+comment1.params=nvo
+comment1.target=void\ addPais(Pais)
+comment2.params=
+comment2.target=float\ habPromPais()
+numComments=3
