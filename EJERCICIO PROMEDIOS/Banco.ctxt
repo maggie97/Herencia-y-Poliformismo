@@ -4,5 +4,5 @@ comment0.target=Banco()
 comment1.params=nvo
 comment1.target=void\ addCuenta(CuentaBancaria)
 comment2.params=
-comment2.target=float\ saldoPromedio()
+comment2.target=float\ calculaPromedio()
 numComments=3

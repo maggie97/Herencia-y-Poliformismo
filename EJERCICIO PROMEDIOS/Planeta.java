@@ -21,13 +21,10 @@ public class Planeta
     
     public float calculaPromedio()
     {
-        float suma = 0; 
-        Iterator <Pais> it = p.iterator();
-        while( it.hasNext()){
-            Pais aux = it.next();
-            suma += aux.obtenerMedida();
-        }
-        return (suma/p.size());
+        Pais [] arrPlanetas = new Pais [p.size()];
+        
+        arrPlanetas = p.toArray(arrPlanetas);
+        return Utileria.calculaPromedio(arrPlanetas);
     }
         
 }

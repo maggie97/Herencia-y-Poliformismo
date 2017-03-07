@@ -5,6 +5,4 @@ comment1.params=nvo
 comment1.target=void\ addPais(Pais)
 comment2.params=
 comment2.target=float\ calculaPromedio()
-comment3.params=
-comment3.target=java.util.ArrayList\ list()
-numComments=4
+numComments=3

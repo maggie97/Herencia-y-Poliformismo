@@ -17,14 +17,14 @@ public class Banco
     {
         coleccion.add(nvo);
     }
-    public float saldoPromedio()
+    public float calculaPromedio()
     {
-        float suma = 0; 
-        Iterator <CuentaBancaria> it = coleccion.iterator();
-        while( it.hasNext()){
-            CuentaBancaria aux = it.next();
-            suma += aux.daSaldo();
+        CuentaBancaria [] arrCuentas = new CuentaBancaria [coleccion.size()];
+        for(int i = 0; i<coleccion.size(); i++)
+        {
+            arrCuentas[i] = coleccion.get(i);
         }
-        return (suma/coleccion.size());
+        // arrCuentas = coleccion.toArray(arrCuentas);
+        return Utileria.calculaPromedio(arrCuentas);
     }
 }
