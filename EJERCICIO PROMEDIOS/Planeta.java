@@ -18,14 +18,16 @@ public class Planeta
     {
         p.add(nvo);
     }
-    public float habPromPais()
+    
+    public float calculaPromedio()
     {
         float suma = 0; 
         Iterator <Pais> it = p.iterator();
         while( it.hasNext()){
             Pais aux = it.next();
-            suma += aux.daHabitantes();
+            suma += aux.obtenerMedida();
         }
         return (suma/p.size());
     }
+        
 }

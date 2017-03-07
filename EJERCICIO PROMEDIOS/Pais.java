@@ -5,13 +5,13 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pais
+public class Pais implements Medible
 {
     private int habitantes;
     public Pais(int h)
     {
         habitantes = h;
     }
-        
-    public int daHabitantes(){return habitantes;}
+    @Override    
+    public float obtenerMedida(){return (float)habitantes;}
 }

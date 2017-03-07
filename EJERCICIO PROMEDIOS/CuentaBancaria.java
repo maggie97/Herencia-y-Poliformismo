@@ -5,13 +5,15 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CuentaBancaria
+public class CuentaBancaria implements Medible
 {
     private int saldo;
     public CuentaBancaria(int s)
     {
         saldo = s;
     }
-    public float daSaldo(){return (float)saldo;}
-    
+    @Override
+    public float obtenerMedida(){return (float)saldo;}
+  
+        
 }
