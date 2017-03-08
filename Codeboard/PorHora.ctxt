@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=h\ s\ nomb
-comment0.target=PorHora(float,\ float,\ java.lang.String)
+comment0.target=PorHora(int,\ float,\ java.lang.String)
 comment1.params=
 comment1.target=void\ calculaSalario()
 comment2.params=

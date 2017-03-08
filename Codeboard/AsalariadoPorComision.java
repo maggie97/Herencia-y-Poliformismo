@@ -24,4 +24,5 @@ public class AsalariadoPorComision extends Empleado
     {
         System.out.println(super.daSueldo());
     }
+    
 }

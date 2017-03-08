@@ -7,16 +7,25 @@
  */
 public class PorHora extends Empleado
 {
-    private float horas;
+    private int horas;
     
-    public PorHora(float h, float s, String nomb){
+    public PorHora(int h, float s, String nomb){
         super(nomb, s);
         horas = h;
     }
     @Override
     public void calculaSalario()
     {
-        super.Sueldo(super.daSueldo()*horas);
+        int aux = 0;
+        if(horas>40)
+        {
+            aux = horas - 40;
+            super.Sueldo(super.daSueldo()*40 + super.daSueldo()*aux*2);
+        }
+        else 
+        {
+            super.Sueldo(super.daSueldo()*horas);
+        }
     }
     @Override 
     public void imprimeDatos()

@@ -1,33 +1,59 @@
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 /**
  * Write a description of class Nomina here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Nomina
+public class Nomina 
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Nomina
-     */
-    public Nomina()
+    private ArrayList <Empleado> empleado;
+    
+    public Nomina ()
     {
-        // initialise instance variables
-        x = 0;
+        empleado = new ArrayList<Empleado>();
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public void addEmp(Empleado e)
     {
-        // put your code here
-        return x + y;
+        empleado.add(e);
+    }
+    public float calculaSueldos()
+    {
+        float suma = 0;
+        for(Empleado e: empleado)
+        {
+            e.calculaSalario();
+            suma = e.daSueldo();
+        }
+        return suma;
+    }
+    public Empleado busca(String Nomb)
+    {
+        for(Empleado e: empleado)
+        {
+            if (e.daNombre() == Nomb)
+            {
+                return e;
+            }
+        }
+        return null;
+    }
+    @Override
+    public String toString()
+    {
+        return " ";
+    }
+    public void elimina(int dato)
+    {
+        for(int i = 0; i < empleado.size(); i++)
+        {
+            Empleado e = empleado.get(i);
+            if( e.daSueldo()<dato)
+            {
+                empleado.remove(i);
+            }
+        }
     }
 }
