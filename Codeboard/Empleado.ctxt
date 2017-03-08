@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=n\ s
+comment0.target=Empleado(java.lang.String,\ float)
+comment1.params=s
+comment1.target=void\ Sueldo(float)
+comment2.params=
+comment2.target=float\ daSueldo()
+comment3.params=
+comment3.target=void\ imprimeDatos()
+comment4.params=
+comment4.target=void\ calculaSalario()
+numComments=5
