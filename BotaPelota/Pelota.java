@@ -20,4 +20,20 @@ public class Pelota
     {
         g.drawOval(posX, posY, radio*2, radio*2);
     }
+    /*public void muevete(Rectangle r)
+    {
+        int x; int y;
+        posX += x;
+        posY += y;
+        if (posY+radio>= r.Height()){
+            y *= -1;
+        }
+        else if( posY+radio<= r.Height()){
+            y *= -1;
+        }
+        else if(posX+radio>= r.Weight){
+            x *= -1;
+        }
+        
+    }*/
 }
