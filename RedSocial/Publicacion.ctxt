@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=Us\ T
+comment0.target=Publicacion(java.lang.String,\ java.lang.String)
+comment1.params=us\ text
+comment1.target=void\ AddComent(java.lang.String,\ java.lang.String)
+comment2.params=l
+comment2.target=int\ Puntuacion(int)
+comment3.params=
+comment3.target=java.lang.String\ HoraActual()
+comment4.params=
+comment4.target=java.lang.String\ daFecha()
+comment5.params=
+comment5.target=java.lang.String\ daUsuario()
+comment6.params=
+comment6.target=java.util.ArrayList\ daComentarios()
+comment7.params=
+comment7.target=int\ daLikes()
+comment8.params=
+comment8.target=int\ daDisLikes()
+numComments=9
