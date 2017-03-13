@@ -66,7 +66,7 @@ public class Ventana extends JFrame
         @Override
         public void actionPerformed(ActionEvent e)
         {
-            System.out.println("Hola pelota");
+            //System.out.println("Hola pelota");
             dibujo.actua();
         }
     }

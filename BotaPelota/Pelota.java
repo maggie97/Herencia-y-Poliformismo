@@ -19,8 +19,12 @@ public class Pelota
         posX = x;
         posY = y;
         radio = r;
-        incx = 10;
-        incy = 10;
+        int rand = (int)(Math.random()*2)-1;
+        if(rand == 0){
+            rand = -1;
+        }
+        incx = 10*rand;
+        incy = 10*rand;
     }
     public void dibujate(Graphics g)
     {
@@ -30,14 +34,11 @@ public class Pelota
     {
         posX += incx;
         posY += incy;
-        System.out.println(" y = " + incy + " x = " + incx + "radio = " + radio);
-        if (posY < radio||  posY > r.getHeight() - radio){
+        if (posY < radio||  posY > r.getHeight() /*- radio*/){
             incy *= -1;
-            System.out.println(" y1 = " + incy);
         }
         else if(posX < radio|| posX > r.getWidth() - radio*2){
             incx *= -1;
         }
-        
     }
 }
